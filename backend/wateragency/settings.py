@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'accounts',
     'employee',
+    ## listings for the needs of the employees of the water agency
+    'listings'
 ]
 
 MIDDLEWARE = [

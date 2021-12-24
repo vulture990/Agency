@@ -20,6 +20,6 @@ class Listing(models.Model):
     is_published = models.BooleanField(default=True)
 
     def __str__(self):
-        return self.title +' posted by '+ self.employee.name + ' at ' + self.list_date
+        return self.title +' posted by '+ self.employee.name + ' at :  ' + str(self.list_date)   
 
 

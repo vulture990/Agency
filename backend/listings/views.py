@@ -1,5 +1,4 @@
 
-# Create your views here.
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.generics import ListAPIView, RetrieveAPIView
@@ -18,6 +17,7 @@ class ListingView(RetrieveAPIView):
     queryset = Listing.objects.order_by('-list_date').filter(is_published=True)
     serializer_class = listingDetailSerializer
     lookup_field = 'slug'
+
 
 class SearchView(APIView):
     permission_classes = (permissions.AllowAny, )

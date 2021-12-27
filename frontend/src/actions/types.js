@@ -5,3 +5,5 @@ export const SIGNUP_FAIL = 'SIGNUP_FAIL';
 export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
 export const LOGIN_FAIL = 'LOGIN_FAIL';
 export const LOGOUT = 'LOGOUT';
+export const POSTED_SUCCESS = 'POSTED_SUCCESS';
+export const POSTED_FAIL = 'POSTED_FAIL';

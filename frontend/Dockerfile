@@ -1,16 +1,8 @@
-# Use an official node runtime as a parent image
-FROM node:14
+FROM node:13.12.0-alpine
+WORKDIR /app/frontend
 
-WORKDIR /app/
-
-# Install dependencies
-COPY package.json yarn.lock /app/
-
-RUN yarn install
-
-# Add rest of the client code
-COPY . /app/
-
+COPY package.json package-lock.json ./
+RUN npm install 
+RUN npm install react-scripts@3.4.1 -g 
+COPY . ./
 EXPOSE 3000
-
-CMD yarn start

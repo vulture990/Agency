@@ -3,7 +3,7 @@ User = get_user_model()
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import permissions
-
+from employee.models import Employee
 class SignupView(APIView):
     permission_classes = (permissions.AllowAny, )
 
@@ -22,8 +22,11 @@ class SignupView(APIView):
                     return Response({'error': 'Password must be at least 6 characters'})
                 else:
                     user = User.objects.create_user(email=email, password=password, name=name)
-
                     user.save()
+                    Employee(employee=user,name=name,email=email).save()
                     return Response({'success': 'User Registered successfully'})
         else:
             return Response({'error': 'Passwords do not match'})
+
+
+

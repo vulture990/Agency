@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import ListingForm from '../components/ListingForm';
 import Listings from '../components/Listings';
 import Pagination from '../components/Pagination';
-
+import Post from './Post';
 const Home = () => {
     const [listings, setListings] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
@@ -42,7 +42,12 @@ const Home = () => {
                     content='water Agence Home Page'
                 />
             </Helmet>
-           <div>Home goes here</div>
+           <div>Home goes here
+               <div>
+                    <Post />
+                    {/* <Note/> */}
+               </div>
+           </div>
         </main>
     );
 };

@@ -22,7 +22,7 @@ const navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
             <nav className='navbar '>
                 <div className='navbar__top '>
                     <div className='navbar__top__logo'>
-                        <Link className='navbar__top__logo__link' to='/'>Water Agence</Link>
+                        <Link className='navbar__top__logo__link' to='/'>Agence du Bassin Hydraulique du Guir Ziz Rheris</Link>
                     </div>
                     <div className='navbar__top__auth'>
                         { !loading && (<Fragment>{ isAuthenticated ? authLinks : guestLinks }</Fragment>) }
@@ -33,7 +33,7 @@ const navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
                         <NavLink className='bg-black navbar__bottom__item__link' exact to='/'>Home</NavLink>
                     </li>
                     <li className='navbar__bottom__item'>
-                        <NavLink className='navbar__bottom__item__link' exact to='/listings'>Needs</NavLink>
+                        <NavLink className='navbar__bottom__item__link' exact to='/listings'>Besoins</NavLink>
                     </li>
                     <li className='navbar__bottom__item'>
                         <NavLink className='navbar__bottom__item__link' exact to='/about'>About</NavLink>

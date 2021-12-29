@@ -3,7 +3,12 @@ import { Helmet } from "react-helmet";
 import axios from "axios";
 
 const About = () => {
-  return <div>about goes here</div>;
+  return <div className="about__header">
+    <div className="">
+
+    <img src="unnamed.jpg" alt="logo" />
+    </div>
+  </div>;
 };
 
 export default About;

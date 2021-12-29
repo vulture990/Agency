@@ -187,6 +187,10 @@ const Post = ({ setAlert }) => {
                 />
             </Helmet>
             <form className='contact__form' onSubmit={e => onSubmit(e)}>
+            <h1 className="home">Welcome to Agence du Bassin Hydraulique du Guir Ziz Rheris </h1>
+        <br></br>
+        <h2 className="home">Citer Vos Besoin</h2>
+                
                 <label className='contact__form__label' htmlFor='title'>Title</label>
                 <input 
                     className='contact__form__input' 

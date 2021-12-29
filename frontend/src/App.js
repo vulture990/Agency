@@ -13,8 +13,10 @@ import PrivateRoute from './components/privateRoute';
 import Post from './containers/Post'
 import { Provider } from 'react-redux';
 import store from './store';
-
 import './sass/main.scss';
+
+// import './sass/main.scss';
+
 
 const App = () => (
     <Provider store={store}>
